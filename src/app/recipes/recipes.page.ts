@@ -14,19 +14,9 @@ export class RecipesPage implements OnInit {
   constructor(
       private recipesService: RecipesService,
       private router: Router
-    ) {
-      router.events.subscribe(event => {
-        if (event instanceof NavigationStart) {
-          this.refresh();
-        }
-      });
-    }
+    ) {}
 
   ngOnInit() {
-    this.refresh();
-  }
-
-  refresh() {
     this.recipes = this.recipesService.getAllRecipes();
   }
 }
