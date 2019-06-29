@@ -1,0 +1,7 @@
+{
+  "appId": "com.firstangularproject.tone",
+  "appName": "angularFirst",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
