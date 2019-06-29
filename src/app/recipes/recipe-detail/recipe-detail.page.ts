@@ -30,6 +30,18 @@ export class RecipeDetailPage implements OnInit {
     });
   }
 
+  ionViewWillEnter(){
+    console.log("Will Entred");
+  }
+
+  ionViewDidEnter(){
+    console.log("Entred");
+  }
+
+  ionViewWillLeave(){
+    console.log("Will Leave");
+  }
+  
   onDeleteRecipe() {
     this.alertController.create({
       header: 'Are you sure?',

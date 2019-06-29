@@ -1,0 +1,6 @@
+ionic serve (starts server)
+ionic capacitor run android -l (run android studio)
+
+chrome://inspect (on chrome)
+safari -> dev inspector
+
