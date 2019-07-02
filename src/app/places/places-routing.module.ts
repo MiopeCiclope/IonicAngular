@@ -6,7 +6,7 @@ const routes: Routes = [
     {
         path: 'tabs',
         component: PlacesPage,
-        children:[
+        children: [
             {
                 path: 'discover',
                 children: [
@@ -36,7 +36,7 @@ const routes: Routes = [
                         loadChildren: './offers/edit-offer/edit-offer.module#EditOfferPageModule'
                     },
                     {
-                        path: 'placeId',
+                        path: ':placeId',
                         loadChildren: './offers/offer-bookings/offer-bookings.module#OfferBookingsPageModule'
                     }
                 ]
@@ -59,4 +59,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class PlacesRoutingModule{}
+export class PlacesRoutingModule {}

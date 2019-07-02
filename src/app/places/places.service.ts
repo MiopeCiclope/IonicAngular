@@ -7,6 +7,12 @@ import { Place } from './place.model';
 export class PlacesService {
   private _places: Place[] = [
     new Place(
+      'p3',
+      'Norway',
+      'Puta pico top',
+      'http://conexaoplaneta.com.br/wp-content/uploads/2018/03/auroras-boreais-zig-koch-conexao-planeta.jpg',
+      550.00),
+    new Place(
       'p1',
       'São João de Meriti',
       'Worst Place to be',
@@ -18,16 +24,15 @@ export class PlacesService {
       'Not bad place to be',
       'https://media-cdn.tripadvisor.com/media/photo-s/0f/24/9c/e9/photo0jpg.jpg',
       179.00),
-    new Place(
-      'p3',
-      'Norway',
-      'My life dream',
-      'http://conexaoplaneta.com.br/wp-content/uploads/2018/03/auroras-boreais-zig-koch-conexao-planeta.jpg',
-      550.00),
   ];
 
   get places() {
     return [...this._places];
   }
+
+  getPlace(id: string) {
+    return {...this._places.find(p => p.id === id)};
+  }
+
   constructor() { }
 }
