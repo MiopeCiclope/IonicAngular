@@ -5,3 +5,4 @@ chrome://inspect (on chrome)
 safari -> dev inspector
 
 ionic generate page 
+ionic generate service
