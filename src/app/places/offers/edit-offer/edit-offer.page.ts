@@ -11,7 +11,7 @@ import { Place } from '../../place.model';
 })
 export class EditOfferPage implements OnInit {
   place: Place;
-  
+
   constructor(
     private route: ActivatedRoute,
     private navCtrl: NavController,
